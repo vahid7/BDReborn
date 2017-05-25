@@ -2249,7 +2249,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Mute Forward* _Has Been Enabled_"
 else
- return "⚔ ممنوعیت ارسال فوروارد در قلمرو فعال شد ⚔""
+ return "⚔ ممنوعیت ارسال فوروارد در قلمرو فعال شد ⚔"
 end
 end
 end
