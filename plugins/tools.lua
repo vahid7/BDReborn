@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 157059515 -- put Your ID here! <===
+local SUDO = 244200491 -- put Your ID here! <===
 function exi_files(cpath)
     local files = {}
     local pth = cpath
@@ -1082,7 +1082,7 @@ end
 
 if ((matches[1] == 'tosuper' and not Clang) or (matches[1] == "تبدیل به سوپرگروه" and Clang)) and is_admin(msg) then
 local text = matches[2]
-tdcli.createNewChannelChat(text, 1, '@BeyondTeam', (function(b, d) tdcli.addChatMember(d.id_, msg.from.id, 0, dl_cb, nil) end), nil)
+tdcli.createNewChannelChat(text, 1, '@Erfaan051', (function(b, d) tdcli.addChatMember(d.id_, msg.from.id, 0, dl_cb, nil) end), nil)
    if not lang then 
 return '_SuperGroup Has Been Created and_ [`'..msg.from.id..'`] _Joined To This SuperGroup._'
   else
@@ -1231,7 +1231,7 @@ return chat_list(msg)
 	   tdcli.sendMessage(matches[2], 0, 1, "Group has been removed by admin command", 1, 'html')
     return '_Group_ *'..matches[2]..'* _removed_'
 		end
-if ((matches[1] == 'beyond' and not Clang) or (matches[1] == "بیوند" and Clang)) then
+if ((matches[1] == 'erfi' and not Clang) or (matches[1] == "عرفی" and Clang)) then
 return tdcli.sendMessage(msg.to.id, msg.id, 1, _config.info_text, 1, 'html')
     end
 if ((matches[1] == 'adminlist' and not Clang) or (matches[1] == "لیست ادمین" and Clang)) and is_admin(msg) then
@@ -1265,7 +1265,7 @@ if matches[1] == "helptools" and not Clang and is_mod(msg) then
 if not lang then
 text = [[
 
-_Sudoer And Admins Beyond Bot Help :_
+_Sudoer And Admins king & queen Bot Help :_
 
 *!visudo* `[username|id|reply]`
 _Add Sudo_
@@ -1493,7 +1493,7 @@ if matches[1] == "راهنمای ابزار" and Clang and is_mod(msg) then
 if not lang then
 text = [[
 
-_Sudoer And Admins Beyond Bot Help :_
+_Sudoer And Admins king & queen Bot Help :_
 
 *سودو* `[username|id|reply]`
 _Add Sudo_
@@ -1733,7 +1733,7 @@ patterns = {
 "^[!/#](admindem) (.*)$",
 "^[!/#](leave)$",
 "^[!/#](autoleave) (.*)$", 
-"^[!/#](beyond)$",
+"^[!/#](erfi)$",
 "^[!/#](creategroup) (.*)$",
 "^[!/#](createsuper) (.*)$",
 "^[!/#](tosuper)$",
@@ -1807,4 +1807,4 @@ patterns = {
 }, 
 run = run, pre_process = pre_process
 }
--- #End By @BeyondTeam
+-- #End By @Erfaan051

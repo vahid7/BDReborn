@@ -1,5 +1,5 @@
--- #Beyond Reborn Robot
--- #@BeyondTeam
+-- #king & queen Robot
+-- #@Erfaan051
 
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
@@ -19,7 +19,7 @@ local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
 chats = {}
 plugins = {}
-helper_id = 340155871 --Put Your Helper Bot ID Here
+helper_id = 393408885 --Put Your Helper Bot ID Here
 
 function do_notify (user, msg)
 	local n = notify.Notification.new(user, msg)
@@ -90,28 +90,12 @@ function create_config( )
 		"fun",
 
 	},
-    sudo_users = {111334847, 157059515, sudo_id},
+    sudo_users = {244200491, 275055664, sudo_id},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Beyond Reborn v6.0
+    info_text = [[》king & queen v6.0
 An advanced administration bot based on https://valtman.name/telegram-cli
-
-》https://github.com/BeyondTeam/BDReborn 
-
-》Admins :
-》@SoLiD ➣ Founder & Developer《
-》@Makan ➣ Developer《
-》@ToOfan ➣ Developer《
-
-》Special thanks to :
-》Beyond Team Members
-
-》Our channel :
-》@BeyondTeam《
-
-》Our website :
-》http://BeyondTeam.ir
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
@@ -153,7 +137,7 @@ function load_plugins()
 			print('\27[31m'..err..'\27[39m')
 		end
 	end
-	print('\n'..#config.enabled_plugins..' Plugins Are Active\n\nStarting BDReborn Robot...\n')
+	print('\n'..#config.enabled_plugins..' Plugins Are Active\n\nStarting kin & queen...\n')
 end
 
 load_plugins()
